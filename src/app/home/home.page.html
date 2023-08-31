@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Gerador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="ion-margin-bottom"></ion-row>            
+    <ion-row class="ion-margin-vertical">          
+      <ion-col class="ion-justify-content-center">
+        <div id="logo-container">
+          <ion-img src="../../assets/app_logo.png" id="logo"></ion-img>
+        </div>
+      </ion-col>
+    <ion-row class="ion-margin-bottom"></ion-row>          
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="10">            
+          <ion-select [(ngModel)]="selectedOption" justify="space-between" fill="outline" label-placement="floating" label="Plataforma">            
+            <ion-select-option value="nubank">Nubank</ion-select-option>
+            <ion-select-option value="hotmart">Hotmart</ion-select-option>
+            <ion-select-option value="eduzz">Eduzz</ion-select-option>
+            <ion-select-option value="monetizze">Monetizze</ion-select-option>
+            <ion-select-option value="kiwify">Kiwify</ion-select-option>
+          </ion-select>            
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-input [(ngModel)]="qtdNotificacao" justify="space-between" label="Qtd. Notificações" label-placement="floating" fill="outline"></ion-input>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="10">
+        <ion-input [(ngModel)]="valorDasVendas" justify="space-between" label="Valor das Vendas" label-placement="floating" fill="outline"></ion-input>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="10">
+        <ion-button size="default" expand="block" (click)="programarVendas()">
+          <ion-icon slot="start" name="alarm-outline"></ion-icon>
+          Programar Vendas
+        </ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col size="10">
+        <ion-button size="large" expand="block" (click)="startNotificacao()">Começar</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid> 
+</ion-content>

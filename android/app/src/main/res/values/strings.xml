@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">FakeMillion</string>
+    <string name="title_activity_main">FakeMillion</string>
+    <string name="package_name">com.fakemillion.app</string>
+    <string name="custom_url_scheme">com.fakemillion.app</string>
+</resources>

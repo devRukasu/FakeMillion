@@ -1,0 +1,7 @@
+{
+  "name": "fakemiliion2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
